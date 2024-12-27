@@ -1,0 +1,45 @@
+# Compiled source files (Java .class)
+**/target/
+**/.mvn/wrapper/
+**/.idea/
+**/*.iml
+**/*.ipr
+**/*.iws
+.mvn/wrapper/
+# Package Files (*.jar)
+
+**/*.jar
+**/*.war
+**/*.ear
+
+# Log files
+
+*.log
+
+# Maven Build Artifacts
+
+**/target/
+
+# IDE Specific Files
+
+.idea/
+*.iws
+*.ipr
+*.iml
+.DS_Store
+
+# OS Specific files
+Thumbs.db
+ehthumbs.db
+
+# Docker files
+
+**/Dockerfile
+docker-compose.yml
+
+# npm
+
+**/node_modules
+
+# build files
+**/build/
