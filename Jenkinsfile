@@ -31,7 +31,7 @@ pipeline {
                         sh 'ls -l mvnw'
                         sh 'chmod +x mvnw'
                         sh 'pwd'
-                        sh './mvnw clean install -DskipTests'
+                        sh './mvnw clean install'
                     }
                 }
             }
@@ -52,7 +52,7 @@ pipeline {
                 dir('frontend') {
                     script {
                         sh 'npm install'
-                        sh 'npm run build'
+                        // sh 'npm run build'
                     }
                 }
             }
