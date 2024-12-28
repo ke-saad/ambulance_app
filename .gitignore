@@ -65,3 +65,4 @@ Thumbs.db
 /frontend/.angular/cache
 *.jar
 /playground/
+!mobile/gradle/wrapper/gradle-wrapper.jar
