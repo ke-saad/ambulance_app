@@ -19,7 +19,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout([$class: 'GitSCM',
-                         branches: [[name: '*/main']],
+                         branches: [[name: '*/master']],
                          userRemoteConfigs: [[credentialsId: "${GIT_CRED_ID}", url: 'https://github.com/ke-saad/ambulance_app.git']]])
             }
         }
