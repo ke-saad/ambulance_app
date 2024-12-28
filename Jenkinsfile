@@ -124,7 +124,8 @@ pipeline {
         DOCKER_IMAGE_PREFIX = "kellalisaad256/ambulance-app"
         DOCKER_REGISTRY = "docker.io"
         GIT_CRED_ID = 'saadjenkinsid1234'
-        DOCKER_CRED_ID = 'kellalisaad256:La3binela3bine@'
+        // DOCKER_CRED_ID = 'kellalisaad256:La3binela3bine@'
+        DOCKER_CRED_ID = 'saaddockerhubcreds1234'
         // SKIP_MODULES = ['frontend', 'mobile']
     }
 
