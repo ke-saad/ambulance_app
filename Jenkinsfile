@@ -29,6 +29,7 @@ pipeline {
                 dir('backend') {
                     script {
                         sh 'ls -l mvnw'
+                        sh 'chmod +x mvnw'
                         sh 'pwd'
                         sh './mvnw clean install -DskipTests'
                     }
