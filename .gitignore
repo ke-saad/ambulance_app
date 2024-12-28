@@ -17,8 +17,6 @@ target/
 **/pom.xml.original
 **/pom.xml.tag
 **/pom.xml.next
-mvnw
-mvnw.cmd
 # Docker
 *.log
 docker-compose.override.yml
