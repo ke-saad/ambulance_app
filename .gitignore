@@ -1,0 +1,70 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+# Maven
+.mvn/wrapper/target/
+target/
+**/target/
+!**/src/main/resources/static # Keep static resources in source code
+**/classes/
+**/generated-sources/
+**/maven-archiver/
+**/maven-status/
+**/pom.xml.versionsBackup
+**/pom.xml.original
+**/pom.xml.tag
+**/pom.xml.next
+mvnw
+mvnw.cmd
+# Docker
+*.log
+docker-compose.override.yml
+
+# Frontend (Angular)
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log
+.angular/
+*.tsbuildinfo
+.vscode/
+public/
+*.css.map
+**/vite/
+**/deps/
+**/deps_ssr/
+# Mobile (Android)
+.gradle/
+/app/build/
+/app/local.properties
+/app/src/main/libs/
+*.apk
+*.ap_
+.externalNativeBuild
+build/
+*.keystore
+/mobile/gradlew
+/mobile/gradlew.bat
+/mobile/local.properties
+*.iml
+.externalNativeBuild/
+/mobile/.idea/
+# Documentation
+/documentation/
+
+# Other
+*.orig
+*.original
+*.backup
+*.swp
+*~
+*.log
+.DS_Store
+Thumbs.db
+/mobile/sampledata
+/mobile/libs/
+/frontend/.angular/cache
+*.jar

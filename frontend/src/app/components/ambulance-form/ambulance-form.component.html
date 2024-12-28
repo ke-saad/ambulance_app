@@ -1,0 +1,41 @@
+<h2>{{ ambulanceId ? 'Edit' : 'Add' }} Ambulance</h2>
+
+@if (loading) {
+<div>Saving ambulance...</div>
+}
+@if (error) {
+<div>{{ error }}</div>
+}
+
+<form (ngSubmit)="onSubmit()" [formGroup]="ambulanceForm">
+  <div>
+    <label for="registrationNumber">Registration Number</label>
+    <input id="registrationNumber" formControlName="registrationNumber" required />
+  </div>
+
+  <div>
+    <label for="model">Model</label>
+    <input id="model" formControlName="model" required />
+  </div>
+
+  <div>
+    <label for="status">Status</label>
+    <input id="status" formControlName="status" required />
+  </div>
+
+  <div>
+    <label for="specialty">Specialty</label>
+    <input id="specialty" formControlName="specialty" required />
+  </div>
+
+  <div>
+    <label for="phone">Phone</label>
+    <input id="phone" formControlName="phone" required />
+  </div>
+
+  <button type="submit" [disabled]="ambulanceForm.invalid || loading">
+    {{ ambulanceId ? 'Update' : 'Create' }} Ambulance
+  </button>
+
+  <button type="button" (click)="navigateToList()">Cancel</button>
+</form>
