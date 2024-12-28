@@ -13,7 +13,7 @@ pipeline {
         DOCKER_REGISTRY = "docker.io"
         GIT_CRED_ID = 'saadjenkinsid1234'
         DOCKER_CRED_ID = 'kellalisaad256:La3binela3bine@'
-        SKIP_MODULES = ['frontend', 'mobile']
+        // SKIP_MODULES = ['frontend', 'mobile']
     }
 
     stages {
@@ -59,17 +59,17 @@ pipeline {
             }
         }
 
-        stage('Build Mobile') {
-            steps {
-                dir('mobile') {
-                    script {
-                        sh 'ls -l gradlew'
-                        sh 'chmod +x gradlew'
-                        sh 'pwd'
-                        sh './gradlew assembleDebug --stacktrace -Dorg.gradle.daemon=false'
-                    }
-                }
-            }
+        // stage('Build Mobile') {
+        //     steps {
+        //         dir('mobile') {
+        //             script {
+        //                 sh 'ls -l gradlew'
+        //                 sh 'chmod +x gradlew'
+        //                 sh 'pwd'
+        //                 sh './gradlew assembleDebug --stacktrace -Dorg.gradle.daemon=false'
+        //             }
+        //         }
+        //     }
 }
 
 
@@ -85,8 +85,8 @@ pipeline {
                         ['backend/hospital-service', 'hospital-service'],
                         ['backend/patient-service', 'patient-service'],
                         ['backend/routing-service', 'routing-service'],
-                        ['frontend', 'frontend'],
-                        ['mobile', 'mobile']
+                        // ['frontend', 'frontend'],
+                        // ['mobile', 'mobile']
                     ]
                     
                     services.each { service ->
