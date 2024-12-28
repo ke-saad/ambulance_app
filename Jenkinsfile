@@ -12,10 +12,9 @@ pipeline {
         DOCKER_IMAGE_PREFIX = "kellalisaad256/ambulance-app"
         DOCKER_REGISTRY = "docker.io"
         GIT_CRED_ID = 'saadjenkinsid1234'
-        DOCKER_CRED_ID = 'kellalisaad256:La3binela3bine@' //todo:hide these later
-
+        DOCKER_CRED_ID = 'kellalisaad256:La3binela3bine@'
     }
-    
+
     stages {
         stage('Checkout') {
             steps {
@@ -27,11 +26,13 @@ pipeline {
 
         stage('Build Backend') {
             steps {
-              dir('backend'){
-                script {
-                   sh "./mvnw clean install -DskipTests"
-                 }
-               }
+                dir('backend') {
+                    script {
+                        sh 'ls -l mvnw'
+                        sh 'pwd'
+                        sh './mvnw clean install -DskipTests'
+                    }
+                }
             }
         }
 
@@ -39,7 +40,7 @@ pipeline {
             steps {
                 dir('backend') {
                     script {
-                        sh "./mvnw test" 
+                        sh './mvnw test'
                     }
                 }
             }
@@ -49,20 +50,20 @@ pipeline {
             steps {
                 dir('frontend') {
                     script {
-                       sh "npm install"
-                       sh "npm run build"
-                   }
+                        sh 'npm install'
+                        sh 'npm run build'
+                    }
                 }
             }
         }
 
-         stage('Build Mobile') {
+        stage('Build Mobile') {
             steps {
-              dir('mobile'){
-                script {
-                   sh "./gradlew assembleDebug --stacktrace -Dorg.gradle.daemon=false"
-                 }
-               }
+                dir('mobile') {
+                    script {
+                        sh './gradlew assembleDebug --stacktrace -Dorg.gradle.daemon=false'
+                    }
+                }
             }
         }
 
@@ -70,83 +71,33 @@ pipeline {
             steps {
                 script {
                     def dockerLoginStep = docker.withRegistry("${DOCKER_REGISTRY}", "${DOCKER_CRED_ID}")
-                    
-                    
-                   dockerLoginStep {
-                        dir('backend/eureka-server') {
-                           sh "docker build -t ${DOCKER_IMAGE_PREFIX}-eureka-server:latest ."
-                           sh "docker tag ${DOCKER_IMAGE_PREFIX}-eureka-server:latest  ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-eureka-server:latest"
-                           sh "docker push ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-eureka-server:latest"
-                        }
-                     }
 
+                    def services = [
+                        ['backend/eureka-server', 'eureka-server'],
+                        ['backend/gateway', 'gateway'],
+                        ['backend/ambulance-service', 'ambulance-service'],
+                        ['backend/hospital-service', 'hospital-service'],
+                        ['backend/patient-service', 'patient-service'],
+                        ['backend/routing-service', 'routing-service'],
+                        ['frontend', 'frontend'],
+                        ['mobile', 'mobile']
+                    ]
                     
-                    dockerLoginStep {
-                         dir('backend/gateway') {
-                           sh "docker build -t ${DOCKER_IMAGE_PREFIX}-gateway:latest ."
-                           sh "docker tag ${DOCKER_IMAGE_PREFIX}-gateway:latest  ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-gateway:latest"
-                           sh "docker push ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-gateway:latest"
-                        }
-                    }
-                    
-                    
-                   dockerLoginStep {
-                       dir('backend/ambulance-service') {
-                            sh "docker build -t ${DOCKER_IMAGE_PREFIX}-ambulance-service:latest ."
-                            sh "docker tag ${DOCKER_IMAGE_PREFIX}-ambulance-service:latest ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-ambulance-service:latest"
-                            sh "docker push ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-ambulance-service:latest"
-                           
-                        }
-                   }
-                  
-                   dockerLoginStep {
-                        dir('backend/hospital-service') {
-                            sh "docker build -t ${DOCKER_IMAGE_PREFIX}-hospital-service:latest ."
-                            sh "docker tag ${DOCKER_IMAGE_PREFIX}-hospital-service:latest ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-hospital-service:latest"
-                            sh "docker push ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-hospital-service:latest"
-                        }
-                    }
-                   
-                   dockerLoginStep {
-                       dir('backend/patient-service') {
-                            sh "docker build -t ${DOCKER_IMAGE_PREFIX}-patient-service:latest ."
-                            sh "docker tag ${DOCKER_IMAGE_PREFIX}-patient-service:latest ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-patient-service:latest"
-                            sh "docker push ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-patient-service:latest"
-                         }
-                    }
-                   
-                   dockerLoginStep {
-                      dir('backend/routing-service') {
-                           sh "docker build -t ${DOCKER_IMAGE_PREFIX}-routing-service:latest ."
-                           sh "docker tag ${DOCKER_IMAGE_PREFIX}-routing-service:latest ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-routing-service:latest"
-                           sh "docker push ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-routing-service:latest"
-                         }
-                    }
-
-                   
-                   dockerLoginStep {
-                        dir('frontend') {
-                            sh "docker build -t ${DOCKER_IMAGE_PREFIX}-frontend:latest ."
-                            sh "docker tag ${DOCKER_IMAGE_PREFIX}-frontend:latest ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-frontend:latest"
-                            sh "docker push ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-frontend:latest"
-                        }
-                    }
-                   
-                    
-                    dockerLoginStep {
-                        dir('mobile') {
-                             sh "docker build -t ${DOCKER_IMAGE_PREFIX}-mobile:latest ."
-                             sh "docker tag ${DOCKER_IMAGE_PREFIX}-mobile:latest ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-mobile:latest"
-                             sh "docker push ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-mobile:latest"
+                    services.each { service ->
+                        dockerLoginStep {
+                            dir(service[0]) {
+                                sh "docker build -t ${DOCKER_IMAGE_PREFIX}-${service[1]}:latest ."
+                                sh "docker tag ${DOCKER_IMAGE_PREFIX}-${service[1]}:latest ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-${service[1]}:latest"
+                                sh "docker push ${DOCKER_REGISTRY}/${DOCKER_IMAGE_PREFIX}-${service[1]}:latest"
+                            }
                         }
                     }
                 }
             }
         }
-    
-         stage('Deploy') {
+
+        stage('Deploy') {
             steps {
-                
                 echo "Deployment is not configured in this example Jenkinsfile"
             }
         }

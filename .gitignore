@@ -68,3 +68,4 @@ Thumbs.db
 /mobile/libs/
 /frontend/.angular/cache
 *.jar
+playground/
