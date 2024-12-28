@@ -112,7 +112,7 @@
 
 pipeline {
     // agent any
-    agent 'docker-agent'
+    agent { label 'docker-agent' }
 
     tools {
         maven 'maven'
