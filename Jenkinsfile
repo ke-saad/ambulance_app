@@ -70,7 +70,7 @@ pipeline {
         //             }
         //         }
         //     }
-}
+// }
 
 
         stage('Build Docker Images') {
