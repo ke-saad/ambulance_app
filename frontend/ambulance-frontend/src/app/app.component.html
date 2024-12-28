@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Ambulance Management System</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened="true">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/ambulances" (click)="sidenav.close()">Ambulances</a>
+      <a mat-list-item routerLink="/hospitals" (click)="sidenav.close()">Hospitals</a>
+      <a mat-list-item routerLink="/patients" (click)="sidenav.close()">Patients</a>
+      <a mat-list-item routerLink="/routings" (click)="sidenav.close()">Nearest Ambulance</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div style="padding: 16px;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

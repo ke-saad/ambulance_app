@@ -1,0 +1,27 @@
+<h2>Find Nearest Ambulance</h2>
+<form (ngSubmit)="findNearestAmbulance()">
+  <div>
+    <label for="patientLatitude">Patient Latitude:</label>
+    <input id="patientLatitude" type="number" [(ngModel)]="patientLatitude" name="patientLatitude" required>
+  </div>
+  <div>
+    <label for="patientLongitude">Patient Longitude:</label>
+    <input id="patientLongitude" type="number" [(ngModel)]="patientLongitude" name="patientLongitude" required>
+  </div>
+  <div>
+    <label for="specialty">Specialty (optional):</label>
+    <input id="specialty" type="text" [(ngModel)]="specialty" name="specialty">
+  </div>
+  <button type="submit">Find Nearest Ambulance</button>
+</form>
+
+<div *ngIf="nearestAmbulance">
+  <h3>Nearest Ambulance:</h3>
+  <p>ID: {{ nearestAmbulance.id }}</p>
+  <p>Registration Number: {{ nearestAmbulance.registrationNumber }}</p>
+  <p>Model: {{ nearestAmbulance.model }}</p>
+  <p>Status: {{ nearestAmbulance.status }}</p>
+  <p>Distance: {{ nearestAmbulance.distance }} km</p>
+  <p>Phone: {{ nearestAmbulance.phone }}</p>
+</div>
+

@@ -1,0 +1,24 @@
+<h2>Hospitals</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Specialties</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let hospital of hospitals">
+      <td>{{ hospital.id }}</td>
+      <td>{{ hospital.name }}</td>
+      <td>{{ hospital.address }}</td>
+      <td>{{ hospital.phone }}</td>
+      <td>{{ hospital.email }}</td>
+      <td>{{ hospital.specialties.join(', ') }}</td>
+    </tr>
+  </tbody>
+</table>
+

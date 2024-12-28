@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@angular/animations": "^19.0.5",
+    "@angular/cdk": "^19.0.4",
+    "@angular/forms": "^19.0.5",
+    "@angular/material": "^19.0.4",
+    "@fortawesome/angular-fontawesome": "^1.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@types/googlemaps": "^3.43.3",
+    "ngx-toastr": "^19.0.0"
+  }
+}
