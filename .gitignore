@@ -64,5 +64,4 @@ Thumbs.db
 /mobile/libs/
 /frontend/.angular/cache
 *.jar
-/playground/
 !mobile/gradle/wrapper/gradle-wrapper.jar

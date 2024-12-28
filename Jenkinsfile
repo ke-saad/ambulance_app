@@ -13,6 +13,7 @@ pipeline {
         DOCKER_REGISTRY = "docker.io"
         GIT_CRED_ID = 'saadjenkinsid1234'
         DOCKER_CRED_ID = 'kellalisaad256:La3binela3bine@'
+        SKIP_MODULES = ['frontend', 'mobile']
     }
 
     stages {
