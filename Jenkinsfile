@@ -62,11 +62,15 @@ pipeline {
             steps {
                 dir('mobile') {
                     script {
+                        sh 'ls -l gradlew'
+                        sh 'chmod +x gradlew'
+                        sh 'pwd'
                         sh './gradlew assembleDebug --stacktrace -Dorg.gradle.daemon=false'
                     }
                 }
             }
-        }
+}
+
 
         stage('Build Docker Images') {
             steps {

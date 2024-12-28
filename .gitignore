@@ -44,8 +44,6 @@ public/
 .externalNativeBuild
 build/
 *.keystore
-/mobile/gradlew
-/mobile/gradlew.bat
 /mobile/local.properties
 *.iml
 .externalNativeBuild/
