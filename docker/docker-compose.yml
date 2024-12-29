@@ -463,4 +463,5 @@ volumes:
 
 networks:
   docker_app_network:
-    external: true
+    # external: true
+    driver: bridge
