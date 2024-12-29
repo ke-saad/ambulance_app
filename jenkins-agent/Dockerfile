@@ -51,7 +51,7 @@ RUN if [ -n "$HOST_DOCKER_GID" ]; then \
   echo "Warning: Could not retrieve HOST_DOCKER_GID, container docker group may have wrong gid."; \
   fi
 
-RUN chmod 777 /var/run/docker.sock
+# RUN chmod 777 /var/run/docker.sock
 
 
 
