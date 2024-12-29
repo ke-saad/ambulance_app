@@ -187,6 +187,13 @@ RUN curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-24.
 RUN usermod -aG docker jenkins && \
   usermod -g docker jenkins
 
+# Synchronize container docker gid with host docker gid
+RUN if [ -n "$HOST_DOCKER_GID" ]; then \
+  groupmod -g "$HOST_DOCKER_GID" docker; \
+  else \
+  echo "Warning: Could not retrieve HOST_DOCKER_GID, container docker group may have wrong gid."; \
+  fi
+
 RUN chmod 777 /var/run/docker.sock
 
 
