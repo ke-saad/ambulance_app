@@ -6,7 +6,7 @@ pipeline {
         jdk 'jdk17'
         nodejs 'nodejs18'
         gradle 'gradle'
-        sonarScanner 'sonarScanner'
+        // sonarScanner 'sonarScanner'
     }
 
     environment {
