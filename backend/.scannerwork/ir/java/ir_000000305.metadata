@@ -1,0 +1,5 @@
+com.example.hospitalservice.controller.HospitalController#updateHospital(Ljava/lang/Long;Lcom/example/hospitalservice/model/Hospital;)Lcom/example/hospitalservice/model/Hospital;
+false
+03934702f98f2b2cf03252c314c2ab97
+==
+updateHospital com.example.hospitalservice.service.HospitalService#updateHospital(Ljava/lang/Long;Lcom/example/hospitalservice/model/Hospital;)Lcom/example/hospitalservice/model/Hospital;

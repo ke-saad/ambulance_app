@@ -1,0 +1,5 @@
+com.example.ambulanceservice.controller.AmbulanceController#getAllAmbulances()Ljava/util/List;
+false
+af518e725601fbc38af55232839f0507
+==
+getAllAmbulances com.example.ambulanceservice.service.AmbulanceService#getAllAmbulances()Ljava/util/List;

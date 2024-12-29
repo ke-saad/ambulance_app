@@ -1,0 +1,103 @@
+
+πcom.example.ambulanceservice.controller.AmbulanceController#updateAmbulance(Ljava/lang/Long;Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;è
+ÑE:/S9/ace/Ambulance Project/backend/ambulance-service/src/main/java/com/example/ambulanceservice/controller/AmbulanceController.java! !($"startingBlock*ã
+startingBlock!$ !(]~
+|
+   (
+%2"
+__annotate**
+
+__unknown_file (
+
+PutMapping*2
+
+__unknown_file (
+
+idjava.lang.LongÄ
+~
+!% !(2
+%3"
+__annotate*,
+
+__unknown_file (
+PathVariable*2
+
+__unknown_file (
+
+idjava.lang.Longx
+v
+!8 !(:
+idjava.lang.Long"__annotation*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3§
+°
+   (
+%4"
+__annotate**
+
+__unknown_file (
+
+PutMapping*W
+
+__unknown_file (;
+9
+	ambulance,com.example.ambulanceservice.model.Ambulance•
+¢
+!< !(H
+%5"
+__annotate*+
+
+__unknown_file (
+RequestBody*W
+
+__unknown_file (;
+9
+	ambulance,com.example.ambulanceservice.model.Ambulanceû
+õ
+!S !(\9
+	ambulance,com.example.ambulanceservice.model.Ambulance"__annotation*"
+
+__unknown_file (
+
+%4*"
+
+__unknown_file (
+
+%5*
+1*»
+1" "(√
+¿
+" "(;
+%05com.example.ambulanceservice.service.AmbulanceService"__id*q
+
+__unknown_file (U*S=
+;com.example.ambulanceservice.controller.AmbulanceController"
+ambulanceService∞≠
+" "(>2
+%1,com.example.ambulanceservice.model.Ambulance"≥com.example.ambulanceservice.service.AmbulanceService#updateAmbulance(Ljava/lang/Long;Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;*Y
+
+__unknown_file (=
+;
+%05com.example.ambulanceservice.service.AmbulanceService*2
+
+__unknown_file (
+
+idjava.lang.Long*W
+
+__unknown_file (;
+9
+	ambulance,com.example.ambulanceservice.model.Ambulance2OupdateAmbulance(Ljava/lang/Long;Lcom/example/ambulanceservice/model/Ambulance;)"@
+" "(?4
+2
+%1,com.example.ambulanceservice.model.Ambulance: 
+!% !(;
+idjava.lang.Long:E
+!< !(\9
+	ambulance,com.example.ambulanceservice.model.AmbulanceB?=
+;com.example.ambulanceservice.controller.AmbulanceControllerH

@@ -1,0 +1,5 @@
+com.example.hospitalservice.controller.HospitalController#deleteHospital(Ljava/lang/Long;)V
+false
+cfa8d24a48a7254f811879eaba73b019
+==
+deleteHospital com.example.hospitalservice.service.HospitalService#deleteHospital(Ljava/lang/Long;)V

@@ -1,0 +1,62 @@
+
+¢com.example.hospitalservice.controller.HospitalController#createHospital(Lcom/example/hospitalservice/model/Hospital;)Lcom/example/hospitalservice/model/Hospital;å
+ÅE:/S9/ace/Ambulance Project/backend/hospital-service/src/main/java/com/example/hospitalservice/controller/HospitalController.java (""startingBlock*Ü
+startingBlock" (B¢
+ü
+ (
+%2"
+__annotate*+
+
+__unknown_file (
+PostMapping*T
+
+__unknown_file (8
+6
+hospital*com.example.hospitalservice.model.Hospital¢
+ü
+# (/
+%3"
+__annotate*+
+
+__unknown_file (
+RequestBody*T
+
+__unknown_file (8
+6
+hospital*com.example.hospitalservice.model.Hospitalõ
+ò
+9 (A6
+hospital*com.example.hospitalservice.model.Hospital"__annotation*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3*
+1*‹
+1 (æ
+ª
+ (9
+%03com.example.hospitalservice.service.HospitalService"__id*n
+
+__unknown_file (R*P;
+9com.example.hospitalservice.controller.HospitalController"
+hospitalServiceÀ»
+ (70
+%1*com.example.hospitalservice.model.Hospital"úcom.example.hospitalservice.service.HospitalService#createHospital(Lcom/example/hospitalservice/model/Hospital;)Lcom/example/hospitalservice/model/Hospital;*W
+
+__unknown_file (;
+9
+%03com.example.hospitalservice.service.HospitalService*T
+
+__unknown_file (8
+6
+hospital*com.example.hospitalservice.model.Hospital2<createHospital(Lcom/example/hospitalservice/model/Hospital;)">
+ (82
+0
+%1*com.example.hospitalservice.model.Hospital:B
+# (A6
+hospital*com.example.hospitalservice.model.HospitalB=;
+9com.example.hospitalservice.controller.HospitalControllerH

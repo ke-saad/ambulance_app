@@ -1,0 +1,5 @@
+com.example.patientservice.controller.PatientController#getPatientById(Ljava/lang/Long;)Lcom/example/patientservice/model/Patient;
+false
+38ac01fefae72b1f9df38605143ddad7
+==
+getPatientById com.example.patientservice.service.PatientService#getPatientById(Ljava/lang/Long;)Lcom/example/patientservice/model/Patient;

@@ -1,0 +1,14 @@
+
+Xcom.example.ambulanceservice.service.AmbulanceService#getAllAmbulances()Ljava/util/List;ˆ
+~E:/S9/ace/Ambulance Project/backend/ambulance-service/src/main/java/com/example/ambulanceservice/service/AmbulanceService.java (+"1*ê
+1 ("Æ
+Ã
+ ("A
+%0;com.example.ambulanceservice.repository.AmbulanceRepository"__id*n
+
+__unknown_file (R*P7
+5com.example.ambulanceservice.service.AmbulanceService"
+ambulanceRepository"
+ (-
+""B97
+5com.example.ambulanceservice.service.AmbulanceServiceH

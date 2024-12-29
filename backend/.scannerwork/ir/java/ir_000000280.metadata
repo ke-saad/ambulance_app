@@ -1,0 +1,5 @@
+com.example.patientservice.controller.PatientController#updatePatient(Ljava/lang/Long;Lcom/example/patientservice/model/Patient;)Lcom/example/patientservice/model/Patient;
+false
+aea73ca70b1bf39ffebdb8852fef8750
+==
+updatePatient com.example.patientservice.service.PatientService#updatePatient(Ljava/lang/Long;Lcom/example/patientservice/model/Patient;)Lcom/example/patientservice/model/Patient;

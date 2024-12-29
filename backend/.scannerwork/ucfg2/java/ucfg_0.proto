@@ -1,0 +1,21 @@
+
+^com.example.ambulanceservice.controller.AmbulanceController#getAllAmbulances()Ljava/util/List;è
+ÑE:/S9/ace/Ambulance Project/backend/ambulance-service/src/main/java/com/example/ambulanceservice/controller/AmbulanceController.java (+"1*Ê
+1 (√
+¿
+ (;
+%05com.example.ambulanceservice.service.AmbulanceService"__id*q
+
+__unknown_file (U*S=
+;com.example.ambulanceservice.controller.AmbulanceController"
+ambulanceServiceÏÈ
+ (2
+%1java.util.List"Xcom.example.ambulanceservice.service.AmbulanceService#getAllAmbulances()Ljava/util/List;*Y
+
+__unknown_file (=
+;
+%05com.example.ambulanceservice.service.AmbulanceService2getAllAmbulances()""
+ (3
+
+%1java.util.ListB?=
+;com.example.ambulanceservice.controller.AmbulanceControllerH

@@ -1,0 +1,103 @@
+
+²com.example.hospitalservice.controller.HospitalController#updateHospital(Ljava/lang/Long;Lcom/example/hospitalservice/model/Hospital;)Lcom/example/hospitalservice/model/Hospital;Œ
+E:/S9/ace/Ambulance Project/backend/hospital-service/src/main/java/com/example/hospitalservice/controller/HospitalController.java! !(""startingBlock*—
+startingBlock!" !(`~
+|
+   (
+%2"
+__annotate**
+
+__unknown_file (
+
+PutMapping*2
+
+__unknown_file (
+
+idjava.lang.Long€
+~
+!# !(0
+%3"
+__annotate*,
+
+__unknown_file (
+PathVariable*2
+
+__unknown_file (
+
+idjava.lang.Longx
+v
+!6 !(8
+idjava.lang.Long"__annotation*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3¨
+¥
+   (
+%4"
+__annotate**
+
+__unknown_file (
+
+PutMapping*[
+
+__unknown_file (?
+=
+updatedHospital*com.example.hospitalservice.model.Hospital©
+¦
+!: !(F
+%5"
+__annotate*+
+
+__unknown_file (
+RequestBody*[
+
+__unknown_file (?
+=
+updatedHospital*com.example.hospitalservice.model.Hospital¢
+Ÿ
+!P !(_=
+updatedHospital*com.example.hospitalservice.model.Hospital"__annotation*"
+
+__unknown_file (
+
+%4*"
+
+__unknown_file (
+
+%5*
+1*·
+1" "(¾
+»
+" "(9
+%03com.example.hospitalservice.service.HospitalService"__id*n
+
+__unknown_file (R*P;
+9com.example.hospitalservice.controller.HospitalController"
+hospitalService¦£
+" "(B0
+%1*com.example.hospitalservice.model.Hospital"¬com.example.hospitalservice.service.HospitalService#updateHospital(Ljava/lang/Long;Lcom/example/hospitalservice/model/Hospital;)Lcom/example/hospitalservice/model/Hospital;*W
+
+__unknown_file (;
+9
+%03com.example.hospitalservice.service.HospitalService*2
+
+__unknown_file (
+
+idjava.lang.Long*[
+
+__unknown_file (?
+=
+updatedHospital*com.example.hospitalservice.model.Hospital2LupdateHospital(Ljava/lang/Long;Lcom/example/hospitalservice/model/Hospital;)">
+" "(C2
+0
+%1*com.example.hospitalservice.model.Hospital: 
+!# !(9
+idjava.lang.Long:I
+!: !(_=
+updatedHospital*com.example.hospitalservice.model.HospitalB=;
+9com.example.hospitalservice.controller.HospitalControllerH

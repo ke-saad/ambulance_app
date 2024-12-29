@@ -1,0 +1,5 @@
+com.example.ambulanceservice.controller.AmbulanceController#updateAmbulance(Ljava/lang/Long;Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;
+false
+a6491c57f98ef632e77d4c7b48565b7d
+==
+updateAmbulance com.example.ambulanceservice.service.AmbulanceService#updateAmbulance(Ljava/lang/Long;Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;

@@ -1,0 +1,41 @@
+
+ècom.example.ambulanceservice.service.AmbulanceService#updateAmbulanceLocation(Ljava/lang/Long;DD)Lcom/example/ambulanceservice/model/Ambulance;à
+~E:/S9/ace/Ambulance Project/backend/ambulance-service/src/main/java/com/example/ambulanceservice/service/AmbulanceService.java- -(,"1*∑
+1. .(1∆
+√
+. .(1A
+%0;com.example.ambulanceservice.repository.AmbulanceRepository"__id*n
+
+__unknown_file (R*P7
+5com.example.ambulanceservice.service.AmbulanceService"
+ambulanceRepositoryé
+ã
+/ /(]
+%1"__declareFunction*f
+
+__unknown_file (JH
+F__sonar_lambda_0$com.example.ambulanceservice.service.AmbulanceServiceq
+o
+. /(_9
+	ambulance,com.example.ambulanceservice.model.Ambulance"__id*"
+
+__unknown_file (
+""∆
+√
+4 4("A
+%3;com.example.ambulanceservice.repository.AmbulanceRepository"__id*n
+
+__unknown_file (R*P7
+5com.example.ambulanceservice.service.AmbulanceService"
+ambulanceRepository"
+4 4(3
+"": 
+-- -(5
+idjava.lang.Long: 
+
+__unknown_file (
+"": 
+
+__unknown_file (
+""B97
+5com.example.ambulanceservice.service.AmbulanceServiceH

@@ -1,0 +1,21 @@
+
+Xcom.example.patientservice.controller.PatientController#getAllPatients()Ljava/util/List;ˆ
+~E:/S9/ace/Ambulance Project/backend/patient-service/src/main/java/com/example/patientservice/controller/PatientController.java ('"1*Ð
+1 (¹
+¶
+ (7
+%01com.example.patientservice.service.PatientService"__id*k
+
+__unknown_file (O*M9
+7com.example.patientservice.controller.PatientController"
+patientServiceàÝ
+ (.
+%1java.util.List"Rcom.example.patientservice.service.PatientService#getAllPatients()Ljava/util/List;*U
+
+__unknown_file (9
+7
+%01com.example.patientservice.service.PatientService2getAllPatients()""
+ (/
+
+%1java.util.ListB;9
+7com.example.patientservice.controller.PatientControllerH

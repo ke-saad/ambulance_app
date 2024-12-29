@@ -1,0 +1,3 @@
+com.example.patientservice.PatientServiceApplication#initPatientDatabase(Lcom/example/patientservice/repository/PatientRepository;)LCommandLineRunner;
+false
+6369d9f55a1746a6442ae215a57eb409

@@ -1,0 +1,5 @@
+com.example.ambulanceservice.controller.AmbulanceController#deleteAmbulance(Ljava/lang/Long;)V
+false
+ef474c558b7fbe94be44a7a7bf1b8f8f
+==
+deleteAmbulance com.example.ambulanceservice.service.AmbulanceService#deleteAmbulance(Ljava/lang/Long;)V

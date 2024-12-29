@@ -1,0 +1,7 @@
+com.example.ambulanceservice.service.AmbulanceService#updateAmbulance(Ljava/lang/Long;Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;
+false
+edf5e396afc5f69c6d9aeb9d4e4112b1
+java.util.Optional#get()Ljava/lang/Object;
+java.util.Optional#isPresent()Z
+==
+!unknownMethod! !unknownMethod!

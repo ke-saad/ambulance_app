@@ -1,0 +1,32 @@
+
+com.example.hospitalservice.service.HospitalService#getHospitalById(Ljava/lang/Long;)Lcom/example/hospitalservice/model/Hospital;…
+{E:/S9/ace/Ambulance Project/backend/hospital-service/src/main/java/com/example/hospitalservice/service/HospitalService.java (#"1*ú
+1. (@Á
+¾
+. (@?
+%09com.example.hospitalservice.repository.HospitalRepository"__id*k
+
+__unknown_file (O*M5
+3com.example.hospitalservice.service.HospitalService"
+hospitalRepository^
+\
+ (N&
+optionalHospitaljava.util.Optional"__id*"
+
+__unknown_file (
+""†ƒ
+ (,0
+%1*com.example.hospitalservice.model.Hospital"?java.util.Optional#orElse(Ljava/lang/Object;)Ljava/lang/Object;*D
+
+__unknown_file ((
+&
+optionalHospitaljava.util.Optional*"
+
+__unknown_file (
+""2orElse(Ljava/lang/Object;)">
+ (-2
+0
+%1*com.example.hospitalservice.model.Hospital: 
+$ (+
+idjava.lang.LongB75
+3com.example.hospitalservice.service.HospitalServiceH

@@ -1,0 +1,6 @@
+com.example.hospitalservice.service.HospitalService#getHospitalById(Ljava/lang/Long;)Lcom/example/hospitalservice/model/Hospital;
+false
+8a9136309a2ca98638dd0b44589f51a2
+java.util.Optional#orElse(Ljava/lang/Object;)Ljava/lang/Object;
+==
+!unknownMethod! !unknownMethod!

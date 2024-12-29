@@ -1,0 +1,5 @@
+com.example.patientservice.controller.PatientController#getAllPatients()Ljava/util/List;
+false
+1d43974be2774f53ec121ba4f5e3f5df
+==
+getAllPatients com.example.patientservice.service.PatientService#getAllPatients()Ljava/util/List;

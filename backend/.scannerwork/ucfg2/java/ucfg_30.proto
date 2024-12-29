@@ -1,0 +1,14 @@
+
+Rcom.example.patientservice.service.PatientService#getAllPatients()Ljava/util/List;‚
+xE:/S9/ace/Ambulance Project/backend/patient-service/src/main/java/com/example/patientservice/service/PatientService.java ('"1*à
+1 ( ¼
+¹
+ ( =
+%07com.example.patientservice.repository.PatientRepository"__id*h
+
+__unknown_file (L*J3
+1com.example.patientservice.service.PatientService"
+patientRepository"
+ (+
+""B53
+1com.example.patientservice.service.PatientServiceH

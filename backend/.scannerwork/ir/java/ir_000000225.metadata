@@ -1,0 +1,5 @@
+com.example.ambulanceservice.controller.AmbulanceController#getAmbulanceById(Ljava/lang/Long;)Lcom/example/ambulanceservice/model/Ambulance;
+false
+ea68776c4fe60cb03e76bc92c009cb33
+==
+getAmbulanceById com.example.ambulanceservice.service.AmbulanceService#getAmbulanceById(Ljava/lang/Long;)Lcom/example/ambulanceservice/model/Ambulance;

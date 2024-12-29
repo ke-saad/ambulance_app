@@ -1,0 +1,7 @@
+com.example.patientservice.service.PatientService#updatePatient(Ljava/lang/Long;Lcom/example/patientservice/model/Patient;)Lcom/example/patientservice/model/Patient;
+false
+3a5dc485fb1d7891d872c040cd7dccce
+java.util.Optional#get()Ljava/lang/Object;
+java.util.Optional#isPresent()Z
+==
+!unknownMethod! !unknownMethod!

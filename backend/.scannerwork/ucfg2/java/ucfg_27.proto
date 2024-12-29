@@ -1,0 +1,103 @@
+
+«com.example.patientservice.controller.PatientController#updatePatient(Ljava/lang/Long;Lcom/example/patientservice/model/Patient;)Lcom/example/patientservice/model/Patient;ˆ
+~E:/S9/ace/Ambulance Project/backend/patient-service/src/main/java/com/example/patientservice/controller/PatientController.java! !( "startingBlock*Ž
+startingBlock!  !(\~
+|
+   (
+%2"
+__annotate**
+
+__unknown_file (
+
+PutMapping*2
+
+__unknown_file (
+
+idjava.lang.Long€
+~
+!! !(.
+%3"
+__annotate*,
+
+__unknown_file (
+PathVariable*2
+
+__unknown_file (
+
+idjava.lang.Longx
+v
+!4 !(6
+idjava.lang.Long"__annotation*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3¥
+¢
+   (
+%4"
+__annotate**
+
+__unknown_file (
+
+PutMapping*X
+
+__unknown_file (<
+:
+updatedPatient(com.example.patientservice.model.Patient¦
+£
+!8 !(D
+%5"
+__annotate*+
+
+__unknown_file (
+RequestBody*X
+
+__unknown_file (<
+:
+updatedPatient(com.example.patientservice.model.PatientŸ
+œ
+!M !([:
+updatedPatient(com.example.patientservice.model.Patient"__annotation*"
+
+__unknown_file (
+
+%4*"
+
+__unknown_file (
+
+%5*
+1*Ÿ
+1" "(¹
+¶
+" "(7
+%01com.example.patientservice.service.PatientService"__id*k
+
+__unknown_file (O*M9
+7com.example.patientservice.controller.PatientController"
+patientService•’
+" "(?.
+%1(com.example.patientservice.model.Patient"¥com.example.patientservice.service.PatientService#updatePatient(Ljava/lang/Long;Lcom/example/patientservice/model/Patient;)Lcom/example/patientservice/model/Patient;*U
+
+__unknown_file (9
+7
+%01com.example.patientservice.service.PatientService*2
+
+__unknown_file (
+
+idjava.lang.Long*X
+
+__unknown_file (<
+:
+updatedPatient(com.example.patientservice.model.Patient2IupdatePatient(Ljava/lang/Long;Lcom/example/patientservice/model/Patient;)"<
+" "(@0
+.
+%1(com.example.patientservice.model.Patient: 
+!! !(7
+idjava.lang.Long:F
+!8 !([:
+updatedPatient(com.example.patientservice.model.PatientB;9
+7com.example.patientservice.controller.PatientControllerH

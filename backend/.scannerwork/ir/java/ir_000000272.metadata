@@ -1,0 +1,7 @@
+com.example.hospitalservice.service.HospitalService#updateHospital(Ljava/lang/Long;Lcom/example/hospitalservice/model/Hospital;)Lcom/example/hospitalservice/model/Hospital;
+false
+2b05924218daf8aac51557eeb112e501
+java.util.Optional#get()Ljava/lang/Object;
+java.util.Optional#isPresent()Z
+==
+!unknownMethod! !unknownMethod!

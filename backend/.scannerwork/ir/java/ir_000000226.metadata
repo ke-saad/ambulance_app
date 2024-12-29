@@ -1,0 +1,5 @@
+com.example.ambulanceservice.controller.AmbulanceController#createAmbulance(Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;
+false
+982ee31526e7e5c5c9174c2cc116a834
+==
+createAmbulance com.example.ambulanceservice.service.AmbulanceService#createAmbulance(Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;

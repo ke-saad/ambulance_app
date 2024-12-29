@@ -1,0 +1,5 @@
+com.example.hospitalservice.controller.HospitalController#getAllHospitals()Ljava/util/List;
+false
+30a9bb1211e88efd5cf43a5007e19f4b
+==
+getAllHospitals com.example.hospitalservice.service.HospitalService#getAllHospitals()Ljava/util/List;

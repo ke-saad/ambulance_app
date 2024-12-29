@@ -1,0 +1,7 @@
+organization=mock-orga
+projectKey=mock-orga_project-manager
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.58741
+dashboardUrl=https://sonarcloud.io/dashboard?id=mock-orga_project-manager
+ceTaskId=AZQPzZYCm2pIx8C1zdJQ
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZQPzZYCm2pIx8C1zdJQ

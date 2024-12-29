@@ -1,0 +1,5 @@
+com.example.hospitalservice.controller.HospitalController#createHospital(Lcom/example/hospitalservice/model/Hospital;)Lcom/example/hospitalservice/model/Hospital;
+false
+dd808038e008995d478bd60cbd30355f
+==
+createHospital com.example.hospitalservice.service.HospitalService#createHospital(Lcom/example/hospitalservice/model/Hospital;)Lcom/example/hospitalservice/model/Hospital;

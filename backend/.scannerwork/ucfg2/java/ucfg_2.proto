@@ -1,0 +1,62 @@
+
+©com.example.ambulanceservice.controller.AmbulanceController#createAmbulance(Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;è
+ÑE:/S9/ace/Ambulance Project/backend/ambulance-service/src/main/java/com/example/ambulanceservice/controller/AmbulanceController.java ($"startingBlock*è
+startingBlock$ (F•
+¢
+ (
+%2"
+__annotate*+
+
+__unknown_file (
+PostMapping*W
+
+__unknown_file (;
+9
+	ambulance,com.example.ambulanceservice.model.Ambulance•
+¢
+% (1
+%3"
+__annotate*+
+
+__unknown_file (
+RequestBody*W
+
+__unknown_file (;
+9
+	ambulance,com.example.ambulanceservice.model.Ambulanceû
+õ
+< (E9
+	ambulance,com.example.ambulanceservice.model.Ambulance"__annotation*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3*
+1*Ù
+1 (√
+¿
+ (;
+%05com.example.ambulanceservice.service.AmbulanceService"__id*q
+
+__unknown_file (U*S=
+;com.example.ambulanceservice.controller.AmbulanceController"
+ambulanceService‹Ÿ
+ (:2
+%1,com.example.ambulanceservice.model.Ambulance"£com.example.ambulanceservice.service.AmbulanceService#createAmbulance(Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;*Y
+
+__unknown_file (=
+;
+%05com.example.ambulanceservice.service.AmbulanceService*W
+
+__unknown_file (;
+9
+	ambulance,com.example.ambulanceservice.model.Ambulance2?createAmbulance(Lcom/example/ambulanceservice/model/Ambulance;)"@
+ (;4
+2
+%1,com.example.ambulanceservice.model.Ambulance:E
+% (E9
+	ambulance,com.example.ambulanceservice.model.AmbulanceB?=
+;com.example.ambulanceservice.controller.AmbulanceControllerH

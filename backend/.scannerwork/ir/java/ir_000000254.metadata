@@ -1,0 +1,6 @@
+com.example.ambulanceservice.service.AmbulanceService#getAmbulanceById(Ljava/lang/Long;)Lcom/example/ambulanceservice/model/Ambulance;
+false
+6ab803157b7cde14e0951470ad48803a
+java.util.Optional#orElse(Ljava/lang/Object;)Ljava/lang/Object;
+==
+!unknownMethod! !unknownMethod!

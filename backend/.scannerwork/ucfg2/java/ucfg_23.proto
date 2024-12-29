@@ -1,0 +1,22 @@
+
+Œcom.example.hospitalservice.service.HospitalService#hospitalOffersSpecialty(Lcom/example/hospitalservice/model/Hospital;Ljava/lang/String;)Z…
+{E:/S9/ace/Ambulance Project/backend/hospital-service/src/main/java/com/example/hospitalservice/service/HospitalService.java/ /(*"3*m
+30 0(Y
+W
+0 0(0
+%0"	__compare*
+0) 0(+
+!=*
+0 0((
+""*
+0, 0(0
+""*
+1*!
+10 0(b"
+0 0(b
+"":B
+/+ /(=6
+hospital*com.example.hospitalservice.model.Hospital:)
+/> /(N
+	specialtyjava.lang.StringB75
+3com.example.hospitalservice.service.HospitalServiceHX

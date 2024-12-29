@@ -1,0 +1,16 @@
+
+•com.example.patientservice.service.PatientService#createPatient(Lcom/example/patientservice/model/Patient;)Lcom/example/patientservice/model/Patient;‚
+xE:/S9/ace/Ambulance Project/backend/patient-service/src/main/java/com/example/patientservice/service/PatientService.java ( "1*à
+1 ( ¼
+¹
+ ( =
+%07com.example.patientservice.repository.PatientRepository"__id*h
+
+__unknown_file (L*J3
+1com.example.patientservice.service.PatientService"
+patientRepository"
+ (/
+"":?
+! (03
+patient(com.example.patientservice.model.PatientB53
+1com.example.patientservice.service.PatientServiceH

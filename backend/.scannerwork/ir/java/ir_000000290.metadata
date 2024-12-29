@@ -1,0 +1,6 @@
+com.example.patientservice.service.PatientService#getPatientById(Ljava/lang/Long;)Lcom/example/patientservice/model/Patient;
+false
+28d5efd3049cebd9387ef8a8a2448794
+java.util.Optional#orElse(Ljava/lang/Object;)Ljava/lang/Object;
+==
+!unknownMethod! !unknownMethod!

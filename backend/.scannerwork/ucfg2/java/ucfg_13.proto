@@ -1,0 +1,56 @@
+
+³com.example.ambulanceservice.service.AmbulanceService#updateAmbulance(Ljava/lang/Long;Lcom/example/ambulanceservice/model/Ambulance;)Lcom/example/ambulanceservice/model/Ambulance;ˆ
+~E:/S9/ace/Ambulance Project/backend/ambulance-service/src/main/java/com/example/ambulanceservice/service/AmbulanceService.java ($"3*Ó
+2 *  (;»¸
+ *  (A2
+%2,com.example.ambulanceservice.model.Ambulance"*java.util.Optional#get()Ljava/lang/Object;*E
+
+__unknown_file ()
+'
+optionalAmbulancejava.util.Optional2get()¨
+¥
+   (BA
+existingAmbulance,com.example.ambulanceservice.model.Ambulance"__id*P
+
+__unknown_file (4
+2
+%2,com.example.ambulanceservice.model.AmbulanceÆ
+Ã
+( ((&A
+%3;com.example.ambulanceservice.repository.AmbulanceRepository"__id*n
+
+__unknown_file (R*P7
+5com.example.ambulanceservice.service.AmbulanceService"
+ambulanceRepository"
+( ((?
+""*Ó
+30 (CÆ
+Ã
+0 (CA
+%0;com.example.ambulanceservice.repository.AmbulanceRepository"__id*n
+
+__unknown_file (R*P7
+5com.example.ambulanceservice.service.AmbulanceService"
+ambulanceRepository_
+]
+ (Q'
+optionalAmbulancejava.util.Optional"__id*"
+
+__unknown_file (
+""‘Ž
+ ()
+%1boolean"java.util.Optional#isPresent()Z*E
+
+__unknown_file ()
+'
+optionalAmbulancejava.util.Optional2isPresent()*
+2
+1*!
+1* *("
+* *(
+"": 
+% (-
+idjava.lang.Long:L
+. (H@
+updatedAmbulance,com.example.ambulanceservice.model.AmbulanceB97
+5com.example.ambulanceservice.service.AmbulanceServiceH

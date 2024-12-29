@@ -1,0 +1,56 @@
+
+¥com.example.patientservice.service.PatientService#updatePatient(Ljava/lang/Long;Lcom/example/patientservice/model/Patient;)Lcom/example/patientservice/model/Patient;‚
+xE:/S9/ace/Ambulance Project/backend/patient-service/src/main/java/com/example/patientservice/service/PatientService.java ( "3*¹
+2!& !(5µ²
+!& !(;.
+%2(com.example.patientservice.model.Patient"*java.util.Optional#get()Ljava/lang/Object;*C
+
+__unknown_file ('
+%
+optionalPatientjava.util.Optional2get()ž
+›
+! !(<;
+existingPatient(com.example.patientservice.model.Patient"__id*L
+
+__unknown_file (0
+.
+%2(com.example.patientservice.model.Patient¼
+¹
+( (($=
+%37com.example.patientservice.repository.PatientRepository"__id*h
+
+__unknown_file (L*J3
+1com.example.patientservice.service.PatientService"
+patientRepository"
+( ((;
+""*Å
+3, (=¼
+¹
+, (==
+%07com.example.patientservice.repository.PatientRepository"__id*h
+
+__unknown_file (L*J3
+1com.example.patientservice.service.PatientService"
+patientRepository]
+[
+ (K%
+optionalPatientjava.util.Optional"__id*"
+
+__unknown_file (
+""Œ
+   ('
+%1boolean"java.util.Optional#isPresent()Z*C
+
+__unknown_file ('
+%
+optionalPatientjava.util.Optional2isPresent()*
+2
+1*!
+1* *("
+* *(
+"": 
+! ()
+idjava.lang.Long:F
+* (@:
+updatedPatient(com.example.patientservice.model.PatientB53
+1com.example.patientservice.service.PatientServiceH

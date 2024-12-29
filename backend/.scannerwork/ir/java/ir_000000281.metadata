@@ -1,0 +1,5 @@
+com.example.patientservice.controller.PatientController#deletePatient(Ljava/lang/Long;)V
+false
+2e14e3c18bdff1e019e7be0165b00268
+==
+deletePatient com.example.patientservice.service.PatientService#deletePatient(Ljava/lang/Long;)V

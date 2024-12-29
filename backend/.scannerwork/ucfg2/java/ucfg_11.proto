@@ -1,0 +1,32 @@
+
+†com.example.ambulanceservice.service.AmbulanceService#getAmbulanceById(Ljava/lang/Long;)Lcom/example/ambulanceservice/model/Ambulance;ˆ
+~E:/S9/ace/Ambulance Project/backend/ambulance-service/src/main/java/com/example/ambulanceservice/service/AmbulanceService.java (%"1*…
+10 (CÆ
+Ã
+0 (CA
+%0;com.example.ambulanceservice.repository.AmbulanceRepository"__id*n
+
+__unknown_file (R*P7
+5com.example.ambulanceservice.service.AmbulanceService"
+ambulanceRepository_
+]
+ (Q'
+optionalAmbulancejava.util.Optional"__id*"
+
+__unknown_file (
+""‰†
+ (-2
+%1,com.example.ambulanceservice.model.Ambulance"?java.util.Optional#orElse(Ljava/lang/Object;)Ljava/lang/Object;*E
+
+__unknown_file ()
+'
+optionalAmbulancejava.util.Optional*"
+
+__unknown_file (
+""2orElse(Ljava/lang/Object;)"@
+ (.4
+2
+%1,com.example.ambulanceservice.model.Ambulance: 
+& (-
+idjava.lang.LongB97
+5com.example.ambulanceservice.service.AmbulanceServiceH

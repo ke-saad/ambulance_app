@@ -1,0 +1,5 @@
+com.example.ambulanceservice.controller.AmbulanceController#updateAmbulanceLocation(Ljava/lang/Long;DD)Lcom/example/ambulanceservice/model/Ambulance;
+false
+b9caddb86c1dd90ad15933f7502d8607
+==
+updateAmbulanceLocation com.example.ambulanceservice.service.AmbulanceService#updateAmbulanceLocation(Ljava/lang/Long;DD)Lcom/example/ambulanceservice/model/Ambulance;

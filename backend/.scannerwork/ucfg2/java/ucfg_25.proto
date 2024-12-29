@@ -1,0 +1,63 @@
+
+‚com.example.patientservice.controller.PatientController#getPatientById(Ljava/lang/Long;)Lcom/example/patientservice/model/Patient;ˆ
+~E:/S9/ace/Ambulance Project/backend/patient-service/src/main/java/com/example/patientservice/controller/PatientController.java (!"startingBlock*›
+startingBlock! (8~
+|
+ (
+%2"
+__annotate**
+
+__unknown_file (
+
+GetMapping*2
+
+__unknown_file (
+
+idjava.lang.Long€
+~
+" (/
+%3"
+__annotate*,
+
+__unknown_file (
+PathVariable*2
+
+__unknown_file (
+
+idjava.lang.Longx
+v
+5 (7
+idjava.lang.Long"__annotation*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3*
+1*ò
+1 (¹
+¶
+ (7
+%01com.example.patientservice.service.PatientService"__id*k
+
+__unknown_file (O*M9
+7com.example.patientservice.controller.PatientController"
+patientServiceèå
+ (0.
+%1(com.example.patientservice.model.Patient"|com.example.patientservice.service.PatientService#getPatientById(Ljava/lang/Long;)Lcom/example/patientservice/model/Patient;*U
+
+__unknown_file (9
+7
+%01com.example.patientservice.service.PatientService*2
+
+__unknown_file (
+
+idjava.lang.Long2 getPatientById(Ljava/lang/Long;)"<
+ (10
+.
+%1(com.example.patientservice.model.Patient: 
+" (7
+idjava.lang.LongB;9
+7com.example.patientservice.controller.PatientControllerH

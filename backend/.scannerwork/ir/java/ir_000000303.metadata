@@ -1,0 +1,5 @@
+com.example.hospitalservice.controller.HospitalController#getHospitalById(Ljava/lang/Long;)Lcom/example/hospitalservice/model/Hospital;
+false
+f96e480fc6b7867f717ab6b58a9b7d6b
+==
+getHospitalById com.example.hospitalservice.service.HospitalService#getHospitalById(Ljava/lang/Long;)Lcom/example/hospitalservice/model/Hospital;

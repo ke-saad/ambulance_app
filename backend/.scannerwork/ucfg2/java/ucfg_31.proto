@@ -1,0 +1,32 @@
+
+|com.example.patientservice.service.PatientService#getPatientById(Ljava/lang/Long;)Lcom/example/patientservice/model/Patient;‚
+xE:/S9/ace/Ambulance Project/backend/patient-service/src/main/java/com/example/patientservice/service/PatientService.java (!"1*ï
+1, (=¼
+¹
+, (==
+%07com.example.patientservice.repository.PatientRepository"__id*h
+
+__unknown_file (L*J3
+1com.example.patientservice.service.PatientService"
+patientRepository]
+[
+ (K%
+optionalPatientjava.util.Optional"__id*"
+
+__unknown_file (
+""ƒ€
+ (+.
+%1(com.example.patientservice.model.Patient"?java.util.Optional#orElse(Ljava/lang/Object;)Ljava/lang/Object;*C
+
+__unknown_file ('
+%
+optionalPatientjava.util.Optional*"
+
+__unknown_file (
+""2orElse(Ljava/lang/Object;)"<
+ (,0
+.
+%1(com.example.patientservice.model.Patient: 
+" ()
+idjava.lang.LongB53
+1com.example.patientservice.service.PatientServiceH

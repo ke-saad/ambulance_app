@@ -1,0 +1,3 @@
+com.example.ambulanceservice.AmbulanceServiceApplication#initDatabase(Lcom/example/ambulanceservice/repository/AmbulanceRepository;)LCommandLineRunner;
+false
+8cb33258d0faaa734e8a40aad51a1e26
