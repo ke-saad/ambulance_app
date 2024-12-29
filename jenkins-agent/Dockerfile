@@ -187,6 +187,8 @@ RUN curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-24.
 RUN usermod -aG docker jenkins && \
   usermod -g docker jenkins
 
+RUN chmod 777 /var/run/docker.sock
+
 
 # Switch back to the jenkins user
 USER jenkins

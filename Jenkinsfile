@@ -111,7 +111,6 @@
 // }
 
 pipeline {
-    // agent any
     agent { label 'docker-agent' }
 
     tools {
