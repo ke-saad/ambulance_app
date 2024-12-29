@@ -1,0 +1,24 @@
+<h2>Ambulances</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Registration Number</th>
+      <th>Model</th>
+      <th>Status</th>
+      <th>Specialty</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ambulance of ambulances">
+      <td>{{ ambulance.id }}</td>
+      <td>{{ ambulance.registrationNumber }}</td>
+      <td>{{ ambulance.model }}</td>
+      <td>{{ ambulance.status }}</td>
+      <td>{{ ambulance.specialty }}</td>
+      <td>{{ ambulance.phone }}</td>
+    </tr>
+  </tbody>
+</table>
+
