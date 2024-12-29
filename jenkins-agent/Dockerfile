@@ -52,8 +52,7 @@ RUN if [ -n "$HOST_DOCKER_GID" ]; then \
   fi
 
 # RUN chmod 777 /var/run/docker.sock
-
-
+RUN echo 'jenkins ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 USER jenkins
 
