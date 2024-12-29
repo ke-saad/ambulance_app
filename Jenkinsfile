@@ -64,8 +64,8 @@ pipeline {
             steps {
                 dir('frontend') {
                     script {
-                        sh 'npm install'
-                        echo 'frontend is not pulled yet'
+                        // sh 'npm install'
+                        echo 'Skipping npm install'
                         
                     }
                 }
