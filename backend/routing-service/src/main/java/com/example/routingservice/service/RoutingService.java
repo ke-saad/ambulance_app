@@ -83,10 +83,60 @@ public class RoutingService {
         return hospitalClient.getHospitalById(id);
     }
 
+//    public NearestAmbulanceDto findNearestAmbulance(double patientLatitude, double patientLongitude, String specialty) {
+//        List<AmbulanceDto> availableAmbulances = ambulanceClient.getAllAmbulances()
+//                .stream()
+//                .filter(a -> a.getStatus() != null && a.getStatus().equalsIgnoreCase("Available"))
+//                .collect(Collectors.toList());
+//
+//        if (availableAmbulances.isEmpty()) {
+//            log.info("No available ambulances found.");
+//            return null;
+//        }
+//
+//        if (specialty != null && !specialty.isEmpty()) {
+//            availableAmbulances = availableAmbulances.stream()
+//                    .filter(ambulance -> isAmbulanceSuitableForSpecialty(ambulance, specialty))
+//                    .collect(Collectors.toList());
+//            log.info("Filtered ambulances for specialty '{}': {}", specialty, availableAmbulances);
+//
+//            if (availableAmbulances.isEmpty()) {
+//                log.info("No available ambulances found with specialty: {}", specialty);
+//                return null;
+//            }
+//        }
+//
+//        List<AmbulanceWithEta> ambulancesWithEta = new ArrayList<>();
+//        boolean usingTrafficApi = false;
+//        for (AmbulanceDto ambulance : availableAmbulances) {
+//            double eta = getEstimatedArrivalTime(ambulance, patientLatitude, patientLongitude);
+//            if (eta > 0){
+//                usingTrafficApi = true;
+//            }
+//            ambulancesWithEta.add(new AmbulanceWithEta(ambulance, eta));
+//        }
+//
+//        ambulancesWithEta.sort(Comparator.comparingDouble(ambulanceWithEta -> ambulanceWithEta.eta));
+//
+//
+//        if (!ambulancesWithEta.isEmpty()) {
+//            AmbulanceDto nearestAmbulance = ambulancesWithEta.get(0).ambulanceDto;
+//            double distance = calculateDistance(patientLatitude, patientLongitude, nearestAmbulance.getLatitude(), nearestAmbulance.getLongitude());
+//            log.info("Nearest Ambulance Found: {}, Distance: {} ", nearestAmbulance.getId(), distance);
+//            if (usingTrafficApi){
+//                log.info("Nearest ambulance found using TomTom API: {}", nearestAmbulance.getId());
+//            }else{
+//                log.info("Nearest ambulance found using fallback (distance): {}", nearestAmbulance.getId());
+//            }
+//            return mapToNearestAmbulanceDto(nearestAmbulance, distance);
+//        }
+//        return null;
+//    }
+
     public NearestAmbulanceDto findNearestAmbulance(double patientLatitude, double patientLongitude, String specialty) {
         List<AmbulanceDto> availableAmbulances = ambulanceClient.getAllAmbulances()
                 .stream()
-                .filter(a -> a.getStatus().equalsIgnoreCase("Available"))
+                .filter(a -> a.getStatus() != null && a.getStatus().equalsIgnoreCase("Available"))
                 .collect(Collectors.toList());
 
         if (availableAmbulances.isEmpty()) {
@@ -98,6 +148,7 @@ public class RoutingService {
             availableAmbulances = availableAmbulances.stream()
                     .filter(ambulance -> isAmbulanceSuitableForSpecialty(ambulance, specialty))
                     .collect(Collectors.toList());
+
             log.info("Filtered ambulances for specialty '{}': {}", specialty, availableAmbulances);
 
             if (availableAmbulances.isEmpty()) {
@@ -108,6 +159,7 @@ public class RoutingService {
 
         List<AmbulanceWithEta> ambulancesWithEta = new ArrayList<>();
         boolean usingTrafficApi = false;
+
         for (AmbulanceDto ambulance : availableAmbulances) {
             double eta = getEstimatedArrivalTime(ambulance, patientLatitude, patientLongitude);
             if (eta > 0){
@@ -118,7 +170,6 @@ public class RoutingService {
 
         ambulancesWithEta.sort(Comparator.comparingDouble(ambulanceWithEta -> ambulanceWithEta.eta));
 
-
         if (!ambulancesWithEta.isEmpty()) {
             AmbulanceDto nearestAmbulance = ambulancesWithEta.get(0).ambulanceDto;
             double distance = calculateDistance(patientLatitude, patientLongitude, nearestAmbulance.getLatitude(), nearestAmbulance.getLongitude());
@@ -128,14 +179,22 @@ public class RoutingService {
             }else{
                 log.info("Nearest ambulance found using fallback (distance): {}", nearestAmbulance.getId());
             }
+
             return mapToNearestAmbulanceDto(nearestAmbulance, distance);
         }
         return null;
     }
 
-    private boolean isAmbulanceSuitableForSpecialty(AmbulanceDto ambulance, String specialty) {
-        return ambulance.getSpecialty() != null && ambulance.getSpecialty().toLowerCase().contains(specialty.toLowerCase());
+    private boolean isAmbulanceSuitableForSpecialty(AmbulanceDto ambulance, String specialty){
+        if (ambulance.getSpecialty() == null || ambulance.getSpecialty().isEmpty()){
+            return false;
+        }
+        return ambulance.getSpecialty().equalsIgnoreCase(specialty);
     }
+
+//    private boolean isAmbulanceSuitableForSpecialty(AmbulanceDto ambulance, String specialty) {
+//        return ambulance.getSpecialty() != null && ambulance.getSpecialty().toLowerCase().contains(specialty.toLowerCase());
+//    }
 
     private double getEstimatedArrivalTime(AmbulanceDto ambulance, double patientLatitude, double patientLongitude) {
         double distance = calculateDistance(ambulance.getLatitude(), ambulance.getLongitude(), patientLatitude, patientLongitude);

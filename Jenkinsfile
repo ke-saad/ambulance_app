@@ -6,6 +6,7 @@ pipeline {
         jdk 'jdk17'
         nodejs 'nodejs18'
         gradle 'gradle'
+        sonarScanner 'sonarScanner'
     }
 
     environment {
@@ -35,6 +36,16 @@ pipeline {
                         sh 'pwd'
                         sh './mvnw clean install'
                     }
+                }
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                dir('backend'){
+                  script {
+                    sh "${tool 'sonarScanner'}/bin/sonar-scanner"
+                  }
                 }
             }
         }
@@ -70,9 +81,7 @@ pipeline {
                             ['backend/ambulance-service', 'ambulance-service'],
                             ['backend/hospital-service', 'hospital-service'],
                             ['backend/patient-service', 'patient-service'],
-                            ['backend/routing-service', 'routing-service'],
-                             
-                             
+                            ['backend/routing-service', 'routing-service'],            
                           ]
 
                             services.each { service ->

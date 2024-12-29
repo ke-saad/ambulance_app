@@ -20,6 +20,7 @@ services:
     depends_on:
       - jenkins
     environment:
+      HOST_DOCKER_GID: 108
       JENKINS_AGENT_WORKDIR: /home/jenkins/agent 
       JENKINS_URL: http://jenkins:8080
       JENKINS_SECRET: "4343e2777994140c67574fb05f3deb705b34674bd69a5122708474b8d94b16f0"
